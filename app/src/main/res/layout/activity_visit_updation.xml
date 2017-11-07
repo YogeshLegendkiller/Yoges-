@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.VisitUpdation">
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            style="@style/card"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="2dp">
+        <RelativeLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#fff">
+
+                <TextView
+                    android:id="@+id/visittext"
+                    android:text="@string/VisitUpdate"
+                    style="@style/cardheader"
+                 />
+
+
+            <View
+                android:id="@+id/view1"
+                android:layout_below="@+id/visittext"
+               style="@style/list_header_view" />
+
+            <TextView
+                android:id="@+id/checkin_text"
+                android:layout_below="@+id/view1"
+                style="@style/list_item_caption"
+                android:text="@string/Checkin" />
+
+
+            <EditText
+                android:id="@+id/checkin"
+                android:layout_below="@+id/checkin_text"
+                android:cursorVisible="true"
+                android:focusable="false"
+              style="@style/edit_text_style" />
+
+            <View
+                android:id="@+id/checkinview"
+                android:layout_below="@+id/checkin"
+               style="@style/list_item_view"/>
+
+
+            <TextView
+                android:id="@+id/checkout_text"
+                android:layout_below="@+id/checkinview"
+                style="@style/list_item_caption"
+                 android:text="@string/Checkout" />
+
+
+            <EditText
+                android:id="@+id/checkout"
+                android:layout_below="@+id/checkout_text"
+                android:cursorVisible="true"
+                android:focusable="false"
+            style="@style/edit_text_style" />
+
+
+            <ImageView
+                android:id="@+id/btn_checkout"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@+id/checkout"
+                android:layout_below="@+id/checkout_text"
+                android:src="@drawable/ic_stop_black_24dp" />
+
+            <View
+                android:id="@+id/checkoutview"
+                android:layout_below="@+id/checkout"
+              style="@style/list_item_view" />
+
+            <TextView
+                android:id="@+id/findingatsite_text"
+                android:layout_below="@+id/checkoutview"
+                android:text="@string/findingatsite"
+                style="@style/list_item_caption"/>
+
+            <EditText
+                android:id="@+id/findingatsite"
+                android:layout_below="@+id/findingatsite_text"
+                android:cursorVisible="true"
+                android:inputType="textMultiLine"
+                style="@style/edit_text_style" />
+
+            <View
+                android:id="@+id/view3"
+                  android:layout_below="@+id/findingatsite"
+               style="@style/list_item_view" />
+
+            <TextView
+                android:id="@+id/actiontaken_text"
+                android:layout_below="@+id/view3"
+                style="@style/list_item_caption"
+                android:text="@string/ActionTaken" />
+
+
+            <EditText
+               android:id="@+id/actiontaken"
+               android:layout_below="@+id/actiontaken_text"
+               android:cursorVisible="true"
+               android:inputType="textMultiLine"
+               style="@style/edit_text_style"
+                />
+
+            <View
+                android:id="@+id/actiontakenview"
+                android:layout_below="@+id/actiontaken"
+               style="@style/list_item_view"/>
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_below="@+id/actiontakenview"
+                style="@style/list_item_caption"
+                android:text="@string/status" />
+
+
+            <EditText
+                android:id="@+id/status"
+                 android:layout_below="@+id/status_text"
+               android:background="#fff"
+                android:cursorVisible="true"
+                android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:focusable="false"
+               style="@style/edit_text_style"/>
+
+            <View
+                android:id="@+id/statusview"
+                 android:layout_below="@+id/status"
+              style="@style/list_item_view" />
+
+            <TextView
+                android:id="@+id/pending_text"
+                android:layout_below="@+id/statusview"
+               style="@style/list_item_caption"
+                android:text="@string/pending_status" />
+
+            <EditText
+                android:id="@+id/pending_status"
+               android:layout_below="@+id/pending_text"
+                  android:cursorVisible="true"
+                android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:focusable="false"
+                android:inputType="textCapSentences"
+             style="@style/edit_text_style" />
+
+            <View
+                android:id="@+id/pendingtextview"
+                android:layout_below="@+id/pending_status"
+                style="@style/list_item_view" />
+
+            <TextView
+                android:id="@+id/nextvisitdate_text"
+                android:layout_below="@+id/pendingtextview"
+                  android:text="@string/nextvisitdate"
+                style="@style/list_item_caption"/>
+
+
+            <EditText
+                android:id="@+id/nextvisitdate"
+                android:layout_below="@+id/nextvisitdate_text"
+                android:cursorVisible="true"
+                android:drawableRight="@drawable/ic_date_range_black_24dp"
+                android:focusable="false"
+                style="@style/edit_text_style"/>
+
+            <View
+                android:id="@+id/nextvisitdateview"
+               android:layout_below="@+id/nextvisitdate"
+             style="@style/list_item_view"/>
+
+            <TextView
+                android:id="@+id/cutoffdate_text"
+                android:layout_below="@+id/nextvisitdateview"
+             style="@style/list_item_caption"
+                android:text="@string/cutoffdate" />
+
+
+            <EditText
+                android:id="@+id/cutoffdate"
+                 android:layout_below="@+id/cutoffdate_text"
+                android:cursorVisible="true"
+                android:drawableRight="@drawable/ic_date_range_black_24dp"
+                android:focusable="false"
+              style="@style/edit_text_style" />
+
+            <View
+                android:id="@+id/cutoffdateview"
+                  android:layout_below="@+id/cutoffdate"
+              style="@style/list_item_view" />
+
+            <TextView
+                android:id="@+id/remarks_text"
+                android:layout_below="@+id/cutoffdateview"
+              style="@style/list_item_caption"
+                android:text="@string/remarks" />
+
+
+            <EditText
+                android:id="@+id/remarks"
+                android:layout_below="@+id/remarks_text"
+                android:inputType="textMultiLine"
+                style="@style/edit_text_style"
+                />
+
+            <View
+                android:id="@+id/remarksview"
+                android:layout_below="@+id/remarks"
+                style="@style/list_item_view"/>
+
+            <TextView
+                android:id="@+id/local_vendor_text"
+                android:layout_below="@+id/remarksview"
+                style="@style/list_item_caption"
+                android:text="@string/local_vendor" />
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:spinnerMode="dialog"
+                android:id="@+id/localvendor"
+                android:layout_below="@+id/local_vendor_text"/>
+
+            <View
+                android:id="@+id/local_vendor_view"
+                 android:layout_below="@+id/localvendor"
+              style="@style/list_item_view" />
+
+            <TextView
+                android:id="@+id/callslipnotext"
+                 android:layout_below="@+id/local_vendor_view"
+              style="@style/list_item_caption"
+                android:text="@string/callslipno" />
+
+
+            <EditText
+                 android:id="@+id/callslipno"
+                 android:layout_below="@+id/callslipnotext"
+                 android:maxLines="1"
+                 style="@style/edit_text_style"/>
+
+            <View
+                android:id="@+id/callslipnoview"
+                 android:layout_below="@+id/callslipno"
+               style="@style/list_item_view"/>
+
+            <TextView
+                android:id="@+id/atta_text"
+                android:layout_below="@+id/callslipnoview"
+                 android:text="@string/attachment"
+                style="@style/list_item_caption"/>
+
+            <EditText
+                android:id="@+id/attachment"
+                android:layout_below="@+id/atta_text"
+                android:cursorVisible="true"
+                android:focusable="false"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                style="@style/edit_text_style"
+                android:drawableRight="@drawable/ic_attachment"
+                android:textCursorDrawable="@null" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/serialnumber_card"
+            android:layout_below="@+id/card"
+            style="@style/card"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="2dp">
+            <RelativeLayout
+                android:id="@+id/serialnumber_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                >
+
+                <LinearLayout
+                    android:id="@+id/serialnumber_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/serialnumber_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:paddingLeft="10dp"
+                        android:text="Item Serial Number Map"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/SForange"
+                        android:textSize="13sp" />
+
+                    <Button
+                        android:id="@+id/btn_item_serial_num"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:background="#ffcc80"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:text="+"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_below="@+id/serialnumber_header"
+                    style="@style/list_header_view" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/relativ"
+                    android:layout_below="@+id/view5"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/customerbranchcode_text"
+                   style="@style/list_item_caption"
+                    android:text="Customer Branch Code"
+                   />
+
+
+                <EditText
+                    android:id="@+id/customer_branch"
+                    android:layout_below="@+id/customerbranchcode_text"
+                    android:background="#fff"
+                    android:cursorVisible="true"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:focusable="false"
+                    style="@style/edit_text_style"/>
+                </RelativeLayout>
+                <View
+                    android:id="@+id/customer_branch_view"
+                    android:layout_below="@+id/relativ"
+                    style="@style/list_item_view" />
+                <LinearLayout
+                    android:id="@+id/serialnumbers_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/customer_branch_view"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/serialnumber_map_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="10dp"
+                        android:text="Serial Number(s)"
+                        android:textStyle="bold"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/SForange"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+
+
+                <View
+                    android:id="@+id/serialnumber_map_text_view"
+                    android:layout_below="@+id/serialnumbers_header"
+                    style="@style/list_header_view"  />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/serialnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/serialnumber_map_text_view" />
+
+                <TextView
+                    android:id="@+id/empty_serialnumberview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/serialnumber_map_text_view"
+                    android:paddingBottom="75dp"
+                    android:text="No Data Available"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+             android:layout_below="@+id/serialnumber_card"
+            style="@style/card"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="2dp">
+        <RelativeLayout
+            android:id="@+id/content_spare_issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+             >
+
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/spare_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:text="@string/Spare"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/SForange"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/btn_spare"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:background="#ffcc80"
+                    android:minHeight="0dp"
+                    android:minWidth="0dp"
+                    android:text="+"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/view2"
+                 android:layout_below="@+id/header"
+                style="@style/list_header_view" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/spare_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view2" />
+
+            <TextView
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view2"
+                android:paddingBottom="75dp"
+                android:text="No Data Available"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+</android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+              android:id="@+id/card2"
+             android:layout_below="@+id/card1"
+            style="@style/card"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="2dp"
+            >
+        <RelativeLayout
+            android:id="@+id/content_spare_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card1"
+            android:background="#fff">
+
+            <LinearLayout
+                android:id="@+id/header1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/spare_issu_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:text="@string/Spare_issue"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/SForange"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/view4"
+               android:layout_below="@+id/header1"
+               style="@style/list_header_view" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/spare_issue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view4" />
+
+            <TextView
+                android:id="@+id/empty_view_issue"
+                android:layout_width="match_parent"
+                android:paddingBottom="75dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view4"
+                android:layout_centerInParent="true"
+                android:text="No Data Available"
+                android:gravity="center"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

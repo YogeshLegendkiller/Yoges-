@@ -1,0 +1,329 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        style="@style/card"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="2dp">
+
+        <RelativeLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/visitinfo"
+                style="@style/cardheader"
+                android:text="Visit Information" />
+
+            <View
+                android:id="@+id/visitview"
+                style="@style/list_header_view"
+                android:layout_below="@+id/visitinfo" />
+
+            <TextView
+                android:id="@+id/checkintext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/visitview"
+                android:text="@string/Checkin" />
+
+            <TextView
+                android:id="@+id/checkin"
+                style="@style/list_item_text"
+                android:layout_below="@+id/checkintext" />
+
+            <View
+                android:id="@+id/checkinview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/checkin" />
+
+            <TextView
+                android:id="@+id/checkouttexr"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/checkinview"
+                android:text="@string/Checkout" />
+
+            <TextView
+                android:id="@+id/checkout"
+                style="@style/list_item_text"
+                android:layout_below="@+id/checkouttexr" />
+
+            <View
+                android:id="@+id/checkoutview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/checkout" />
+
+
+            <TextView
+                android:id="@+id/actiontakentext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/checkoutview"
+                android:text="@string/ActionTaken" />
+
+            <TextView
+                android:id="@+id/actiontaken"
+                style="@style/list_item_text"
+                android:layout_below="@+id/actiontakentext" />
+
+            <View
+                android:id="@+id/actiontakenview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/actiontaken" />
+
+            <TextView
+                android:id="@+id/findingatsitetext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/actiontakenview"
+                android:text="@string/findingatsite" />
+
+            <TextView
+                android:id="@+id/findingatsite"
+                style="@style/list_item_text"
+                android:layout_below="@+id/findingatsitetext" />
+
+            <View
+                android:id="@+id/findingatsiteview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/findingatsite" />
+
+
+            <TextView
+                android:id="@+id/callslipnotext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/findingatsiteview"
+                android:text="@string/callslipno" />
+
+            <TextView
+                android:id="@+id/callslipno"
+                style="@style/list_item_text"
+                android:layout_below="@+id/callslipnotext" />
+
+            <View
+                android:id="@+id/callslipnoview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/callslipno" />
+
+            <TextView
+                android:id="@+id/visitstatustext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/callslipnoview"
+                android:text="@string/visitstatus" />
+
+            <TextView
+                android:id="@+id/visitstatus"
+                style="@style/list_item_text"
+                android:layout_below="@+id/visitstatustext" />
+
+            <View
+                android:id="@+id/visitstatuview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/visitstatus" />
+
+            <TextView
+                android:id="@+id/pendingclassificationtext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/visitstatuview"
+                android:text="@string/pendingclassification" />
+
+            <TextView
+                android:id="@+id/pendingclassification"
+                style="@style/list_item_text"
+                android:layout_below="@+id/pendingclassificationtext" />
+
+            <View
+                android:id="@+id/pendingclassificationview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/pendingclassification" />
+
+            <TextView
+                android:id="@+id/nextvisitdatetext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/pendingclassificationview"
+                android:text="@string/nextvisitdate" />
+
+            <TextView
+                android:id="@+id/nextvisitdate"
+                style="@style/list_item_text"
+                android:layout_below="@+id/nextvisitdatetext" />
+
+            <View
+                android:id="@+id/nextvisitdateview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/nextvisitdate" />
+
+
+            <TextView
+                android:id="@+id/cutoffdatetext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/nextvisitdateview"
+                android:text="@string/cutoffdate" />
+
+            <TextView
+                android:id="@+id/cutoffdate"
+                style="@style/list_item_text"
+                android:layout_below="@+id/cutoffdatetext" />
+
+            <View
+                android:id="@+id/cutoffdateview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/cutoffdate" />
+
+            <TextView
+                android:id="@+id/remarkstext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/cutoffdateview"
+                android:text="@string/remarks" />
+
+            <TextView
+                android:id="@+id/remarks"
+                style="@style/list_item_text"
+                android:layout_below="@+id/remarkstext" />
+
+            <View
+                android:id="@+id/remarksview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/remarks" />
+
+            <TextView
+                android:id="@+id/sliptext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/remarksview"
+                android:text="@string/slip" />
+
+            <TextView
+                android:id="@+id/slip"
+                style="@style/list_item_text"
+                android:layout_below="@+id/sliptext" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+
+    <!--TextView
+        android:id="@+id/otherinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/visitcard"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Other Information"
+        android:textColor="@color/SForange"
+        android:textSize="15dp" />
+    <android.support.v7.widget.CardView
+        android:id="@+id/othercard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otherinfo"
+        android:layout_margin="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="@string/CreatedBy"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Createdby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="@string/LastModifiedby"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lastmodifiedby"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:text="@string/LastModifiedat"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lastmodifiedat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:text="@string/Createdat"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/createdat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView-->
+

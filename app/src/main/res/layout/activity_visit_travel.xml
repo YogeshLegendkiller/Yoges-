@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="precisioninfomatics.servicefirst.Activities.VisitTravel">
+
+
+    <include layout="@layout/fragmap" />
+    <include
+        android:id="@+id/bottom_sheet"
+        layout="@layout/bottomsheet"/>
+             <!--android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stopfab"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:src="@drawable/ic_motorcycle_black_24dp"
+        app:layout_anchor="@+id/bottom_sheet"
+        app:layout_anchorGravity="top|end" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:src="@drawable/ic_motorcycle_black_24dp"
+        app:layout_anchor="@+id/bottom_sheet"
+        android:id="@+id/start"
+        app:layout_anchorGravity="top|end" /-->
+    </android.support.design.widget.CoordinatorLayout>

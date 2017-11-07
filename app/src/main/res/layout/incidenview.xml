@@ -1,0 +1,477 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        style="@style/card"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/root"
+            style="@style/card_inner"
+            >
+
+            <TextView
+                android:id="@+id/companynametxt"
+                style="@style/cardheader"
+                android:text="Company Details" />
+
+            <View
+                android:id="@+id/companydetailsview"
+                style="@style/list_header_view"
+                android:layout_below="@+id/companynametxt" />
+
+            <TextView
+                android:id="@+id/customernametext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/companydetailsview"
+                android:text="@string/Customer" />
+
+            <TextView
+                android:id="@+id/companyname"
+                style="@style/list_item_text"
+                android:layout_below="@+id/customernametext" />
+
+            <View
+                android:id="@+id/companyview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/companyname" />
+
+            <TextView
+                android:id="@+id/code_text"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/companyview"
+                android:text="@string/CustomerCode" />
+
+            <TextView
+                android:id="@+id/customercode"
+                style="@style/list_item_text"
+                android:layout_below="@+id/code_text" />
+
+            <View
+                android:id="@+id/codeview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/customercode" />
+
+            <TextView
+                android:id="@+id/addresstext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/codeview"
+                android:text="@string/Address" />
+
+            <TextView
+                android:id="@+id/address"
+                style="@style/list_item_text"
+                android:layout_below="@+id/addresstext" />
+
+            <View
+                android:id="@+id/addressview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/address" />
+
+            <TextView
+                android:id="@+id/contacttext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/addressview"
+                android:text="@string/ContactName" />
+
+            <TextView
+                android:id="@+id/contactname"
+                style="@style/list_item_text"
+                android:layout_below="@+id/contacttext" />
+
+            <View
+                android:id="@+id/contactview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/contactname" />
+
+            <TextView
+                android:id="@+id/designationtext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/contactview"
+                android:text="@string/Designation" />
+
+            <TextView
+                android:id="@+id/designation"
+                style="@style/list_item_text"
+                android:layout_below="@+id/designationtext" />
+
+            <View
+                android:id="@+id/designationview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/designation" />
+
+            <TextView
+                android:id="@+id/emailidtext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/designationview"
+                android:text="@string/EmailID" />
+
+            <TextView
+                android:id="@+id/emailid"
+                style="@style/list_item_text"
+                android:layout_below="@+id/emailidtext" />
+
+            <View
+                android:id="@+id/emailidview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/emailid" />
+
+            <TextView
+                android:id="@+id/phonetext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/emailidview"
+                android:text="@string/PhoneNo" />
+
+            <TextView
+                android:id="@+id/phoneno"
+                style="@style/list_item_text"
+                android:layout_below="@+id/phonetext" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/asset_card"
+        android:layout_below="@+id/card"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="2dp"
+       style="@style/card">
+
+        <RelativeLayout
+            android:id="@+id/root1"
+         style="@style/card_inner">
+
+            <TextView
+                android:id="@+id/serialnumbertxt"
+                style="@style/cardheader"
+                android:text="Asset Details" />
+
+            <View
+                android:id="@+id/assetdetailsview"
+                style="@style/list_header_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/serialnumbertxt" />
+
+            <TextView
+                android:id="@+id/partnotext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/assetdetailsview"
+                android:text="@string/Partno" />
+
+            <TextView
+                android:id="@+id/partno"
+                style="@style/list_item_text"
+                android:layout_below="@+id/partnotext" />
+
+            <View
+                android:id="@+id/partview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/partno" />
+
+            <TextView
+                android:id="@+id/serialnumbertxts"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/partview"
+                android:text="@string/serialnunmber" />
+
+            <TextView
+                android:id="@+id/serialnumber"
+                style="@style/list_item_text"
+                android:layout_below="@+id/serialnumbertxts" />
+
+            <View
+                android:id="@+id/serialview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/serialnumber" />
+
+
+
+            <TextView
+                android:id="@+id/startdatetxt"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/serialview"
+                android:text="@string/startdate" />
+
+            <TextView
+                android:id="@+id/startdate"
+                style="@style/list_item_text"
+                android:layout_below="@+id/startdatetxt" />
+
+            <View
+                android:id="@+id/startdateview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/startdate" />
+
+            <TextView
+                android:id="@+id/enddatetext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/startdateview"
+                android:text="@string/enddate" />
+
+            <TextView
+                android:id="@+id/enddate"
+                style="@style/list_item_text"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/enddatetext" />
+
+            <View
+                android:id="@+id/enddateview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/enddate" />
+
+            <TextView
+                android:id="@+id/assetintext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/enddateview"
+                android:text="@string/assetin" />
+
+            <TextView
+                android:id="@+id/assetin"
+                style="@style/list_item_text"
+                android:layout_below="@+id/assetintext" />
+
+            <View
+                android:id="@+id/assetinview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/assetin" />
+            <TextView
+                android:id="@+id/periodtypetxt"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/assetinview"
+                android:text="@string/ContractCode" />
+
+            <TextView
+                android:id="@+id/contractcode"
+                style="@style/list_item_text"
+                android:layout_below="@+id/periodtypetxt" />
+
+            <View
+                android:id="@+id/periodview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/contractcode" />
+            <TextView
+                android:id="@+id/baseconfigtext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/periodview"
+                android:text="@string/contractstartdate" />
+
+            <TextView
+                android:id="@+id/contractsdate"
+                style="@style/list_item_text"
+                android:layout_below="@+id/baseconfigtext" />
+            <View
+                android:id="@+id/sview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/contractsdate" />
+            <TextView
+                android:id="@+id/contractendate"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/sview"
+                android:text="@string/contractenddate" />
+
+            <TextView
+                android:id="@+id/contract_edate"
+                style="@style/list_item_text"
+                android:layout_below="@+id/contractendate" />
+            <View
+                android:id="@+id/eview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/contract_edate" />
+            <TextView
+                android:id="@+id/contractstatustxt"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/eview"
+                android:text="@string/contractstatus" />
+
+            <TextView
+                android:id="@+id/contractstatus"
+                style="@style/list_item_text"
+                android:layout_below="@+id/contractstatustxt" />
+            <View
+                android:id="@+id/statusview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/contractstatus" />
+            <TextView
+                android:id="@+id/acmtext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/statusview"
+                android:text="@string/accountmanager" />
+
+            <TextView
+                android:id="@+id/acm"
+                style="@style/list_item_text"
+                android:layout_below="@+id/acmtext" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/incident_card"
+         android:layout_below="@+id/asset_card"
+         style="@style/card"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/root3"
+          style="@style/card_inner">
+
+            <TextView
+                android:id="@+id/incidenttext"
+                style="@style/cardheader"
+                android:text="Incident" />
+
+            <View
+                android:id="@+id/incidenttextview"
+                style="@style/list_header_view"
+                android:layout_below="@+id/incidenttext" />
+
+            <TextView
+                android:id="@+id/serviceprovidertext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/incidenttext"
+                android:text="@string/serviceprovider" />
+
+            <TextView
+                android:id="@+id/serviceprovider"
+                style="@style/list_item_text"
+                android:layout_below="@+id/serviceprovidertext" />
+
+            <View
+                android:id="@+id/serviceproviderview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/serviceprovider" />
+
+            <TextView
+                android:id="@+id/callorigintext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/serviceproviderview"
+                android:text="@string/callorgin" />
+
+            <TextView
+                android:id="@+id/callorgin"
+                style="@style/list_item_text"
+                android:layout_below="@+id/callorigintext" />
+
+            <View
+                android:id="@+id/calloriginview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/callorgin" />
+
+            <TextView
+                android:id="@+id/serviceclassificationtxt"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/calloriginview"
+                android:text="@string/serviceclasification" />
+
+            <TextView
+                android:id="@+id/serviceclasification"
+                style="@style/list_item_text"
+                android:layout_below="@+id/serviceclassificationtxt" />
+
+            <View
+                android:id="@+id/serviceclasificationview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/serviceclasification" />
+
+            <TextView
+                android:id="@+id/servicecatgorytxt"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/serviceclasificationview"
+                android:text="@string/servicecategory" />
+
+            <TextView
+                android:id="@+id/servicecatgory"
+                style="@style/list_item_text"
+                android:layout_below="@+id/servicecatgorytxt" />
+
+            <View
+                android:id="@+id/servicecatgoryview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/servicecatgory" />
+
+            <TextView
+                android:id="@+id/servicesubcategorytext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/servicecatgoryview"
+                android:text="@string/servicesubcategory" />
+
+            <TextView
+                android:id="@+id/servicesubcategory"
+                style="@style/list_item_text"
+                android:layout_below="@+id/servicesubcategorytext" />
+
+            <View
+                android:id="@+id/servicesubcategoryview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/servicesubcategory" />
+
+            <TextView
+                android:id="@+id/problemcategorytext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/servicesubcategoryview"
+                android:text="@string/problemcategory" />
+
+            <TextView
+                android:id="@+id/problemcategory"
+                style="@style/list_item_text"
+                android:layout_below="@+id/problemcategorytext" />
+
+            <View
+                android:id="@+id/problemcategoryview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/problemcategory" />
+
+            <TextView
+                android:id="@+id/problemdestext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/problemcategoryview"
+                android:text="@string/problemdescription" />
+
+            <TextView
+                android:id="@+id/problemdescription"
+                style="@style/list_item_text"
+                android:layout_below="@+id/problemdestext" />
+
+            <View
+                android:id="@+id/problemdescriptionview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/problemdescription" />
+
+            <TextView
+                android:id="@+id/prioritytxt"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/problemdescriptionview"
+                android:text="@string/priority" />
+
+            <TextView
+                android:id="@+id/priority"
+                style="@style/list_item_text"
+                android:layout_below="@+id/prioritytxt" />
+
+            <View
+                android:id="@+id/priorityview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/priority" />
+
+            <TextView
+                android:id="@+id/remarkstext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/priorityview"
+                android:text="@string/remarks" />
+
+            <TextView
+                android:id="@+id/remarks"
+                style="@style/list_item_text"
+                android:layout_below="@+id/remarkstext" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

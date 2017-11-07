@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/my_profile"
+            android:icon="@drawable/ic_person_outline_black_24dp"
+            android:title="My Profile" />
+        </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/incident">
+    <item
+            android:id="@+id/call"
+            android:icon="@drawable/ic_call_black_24dp"
+            android:title="Incident" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/vehicle_details_view">
+        <item
+            android:id="@+id/vehicle_details"
+            android:icon="@drawable/ic_directions_bike_black_24dp"
+            android:title="@string/VehicleDetails" />
+    </group>
+    <!--group android:checkableBehavior="single"
+        android:id="@+id/attendence_view">
+    <item
+            android:id="@+id/attendence"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="@string/Attendence" />
+    </group-->
+    <group android:checkableBehavior="single"
+        android:id="@+id/logoutview">
+    <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_settings_power_black_24dp"
+            android:title="@string/logout" />
+
+
+</group>
+
+</menu>

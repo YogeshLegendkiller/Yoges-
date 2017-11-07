@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "407129262295",
+    "firebase_url": "https://servicefirst-45795.firebaseio.com",
+    "project_id": "servicefirst-45795",
+    "storage_bucket": "servicefirst-45795.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407129262295:android:79b390f17eec72b9",
+        "android_client_info": {
+          "package_name": "precisioninfomatics.servicefirst"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407129262295-lt13spml39lcncrn2dc5kd3rhp30v6a3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "precisioninfomatics.servicefirst",
+            "certificate_hash": "8eccbb480cf64d37f7892e9ecbd2137a0e5269c0"
+          }
+        },
+        {
+          "client_id": "407129262295-4njdbfictv70g5f1bhn8h4i7j9gbt8ok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZS6O6KHYSc2wlGZV_bta4FGVqkz2M72M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407129262295-4njdbfictv70g5f1bhn8h4i7j9gbt8ok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

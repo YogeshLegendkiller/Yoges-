@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vehicle_type" >
+    <item>--Select--</item>
+    <item>Two Wheeler</item>
+    <item>Four Wheeler</item>
+     <item> Both </item>
+    </string-array>
+    <string-array name="part_status" >
+        <item>--Select--</item>
+        <item>REQUEST</item>
+        <item>STAND BY</item>
+    </string-array>
+    <string-array name="date_format" >
+        <item>--Select--</item>
+        <item>yyyy-MM-dd</item>
+        <item>YYYY/MM/DD</item>
+        <item>YYYY.MM.DD</item>
+        <item>MM-dd-yyyy</item>
+        <item>MM/dd/yyyy</item>
+        <item>MM.dd.yyyy</item>
+        <item>dd-MM-yyyy</item>
+        <item>dd/MM/yyyy</item>
+        <item>dd.MM.yyyy</item>
+    </string-array>
+    <string-array name="localvendor" >
+        <item>NO</item>
+        <item>YES</item>
+    </string-array>
+</resources>

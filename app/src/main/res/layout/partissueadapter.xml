@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/partno"
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="14sp"/>
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+         android:layout_marginRight="5dp"
+        android:id="@+id/serialnumber"
+        android:textColor="#000"
+        android:layout_below="@+id/partno"/>
+
+    <ImageView
+        android:id="@+id/dropdownarrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/serialnumber"
+        android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/serialnumber"
+        android:layout_marginTop="3dp"
+        android:id="@+id/status" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/status"
+        android:background="#e3e3e3"/>
+
+</RelativeLayout>

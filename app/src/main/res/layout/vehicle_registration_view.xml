@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<android.support.v7.widget.CardView
+    android:id="@+id/card"
+    style="@style/card"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="2dp">
+    <RelativeLayout
+        android:id="@+id/root"
+        style="@style/card_inner">
+        <TextView
+            android:id="@+id/visitinfo"
+            style="@style/cardheader"
+            android:text="@string/VehicleDetails" />
+        <View
+            android:id="@+id/visitinfoview"
+            android:layout_below="@+id/visitinfo"
+            style="@style/list_header_view"
+            />
+
+        <TextView
+            android:id="@+id/registrationtxt"
+            android:layout_below="@+id/visitinfoview"
+            android:text="@string/registration"
+            style="@style/list_item_caption"/>
+
+        <TextView
+            android:id="@+id/reg_no"
+            android:layout_below="@+id/registrationtxt"
+           style="@style/list_item_text"
+            />
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card1"
+        android:layout_below="@+id/card"
+        style="@style/card"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="2dp">
+    <RelativeLayout
+        android:id="@+id/root1"
+        style="@style/card_inner"
+       >
+        <TextView
+            android:id="@+id/otherinfo"
+             android:text="@string/LicenseDetail"
+             style="@style/cardheader" />
+
+        <View
+            android:id="@+id/otherinfoview"
+            android:layout_below="@+id/otherinfo"
+            style="@style/list_header_view" />
+
+        <TextView
+            android:id="@+id/lic_no_caption"
+            android:layout_below="@+id/otherinfoview"
+             android:text="@string/Lic_no"
+            style="@style/list_item_caption"/>
+
+        <TextView
+            android:id="@+id/lic_no"
+           android:layout_below="@+id/lic_no_caption"
+            style="@style/list_item_text"
+            />
+
+        <View
+            android:id="@+id/lic_noview"
+            android:layout_below="@+id/lic_no"
+            style="@style/list_item_view" />
+
+        <TextView
+            android:id="@+id/lic_type_caption"
+             android:layout_below="@+id/lic_noview"
+            android:text="@string/Lic_type"
+            style="@style/list_item_caption"
+         />
+
+        <TextView
+            android:id="@+id/lic_type"
+            android:layout_below="@+id/lic_type_caption"
+            style="@style/list_item_text"
+             />
+
+        <View
+            android:id="@+id/lic_typeview"
+              android:layout_below="@+id/lic_type"
+            style="@style/list_item_view"/>
+
+        <TextView
+            android:id="@+id/lic_type_text"
+            android:layout_below="@+id/lic_typeview"
+             android:text="@string/Lic_date"
+            style="@style/list_item_caption"/>
+
+        <TextView
+            android:id="@+id/lic_expirydate"
+            android:layout_below="@+id/lic_type_text"
+            style="@style/list_item_text"
+         />
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/card2"
+        android:layout_below="@+id/card1"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="2dp"
+        style="@style/card">
+    <RelativeLayout
+        style="@style/card_inner">
+    <TextView
+            android:id="@+id/insurance_text"
+              android:text="@string/insurance_details"
+             style="@style/cardheader"  />
+
+        <View
+            android:id="@+id/expdateview"
+            android:layout_below="@+id/insurance_text"
+            style="@style/list_header_view"/>
+
+        <TextView
+            android:id="@+id/insurancetext"
+            android:layout_below="@+id/expdateview"
+            android:text="@string/insurance_expdate"
+           style="@style/list_item_caption"/>
+
+        <TextView
+            android:id="@+id/insurace_exp"
+           android:layout_below="@+id/insurancetext"
+            style="@style/list_item_text"
+            />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

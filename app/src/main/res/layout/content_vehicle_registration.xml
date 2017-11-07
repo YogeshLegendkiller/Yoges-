@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="precisioninfomatics.servicefirst.Activities.VehicleRegistration"
+    tools:showIn="@layout/activity_vehicle_registration">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:id="@+id/card"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="2dp"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="0dp"
+                android:paddingBottom="5dp"
+                android:background="#fff">
+
+
+                <TextView
+                    android:id="@+id/visittext"
+                       android:text="@string/VehicleDetails"
+                   style="@style/cardheader" />
+
+
+
+
+            <View
+                android:id="@+id/view1"
+               android:layout_below="@+id/visittext"
+              style="@style/list_header_view" />
+
+
+            <TextView
+                android:id="@+id/type_txt"
+                android:layout_below="@+id/view1"
+                android:text="Do You Own Vehicle ?"
+                style="@style/list_item_caption"
+                android:textColor="@color/SForange"
+               />
+
+            <RadioGroup
+                android:id="@+id/radio_grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/type_txt"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="No" />
+            </RadioGroup>
+                <View
+                    android:id="@+id/radio_view"
+                    android:layout_below="@+id/radio_grp"
+                    style="@style/list_item_view" />
+
+
+                <TextView
+                    android:id="@+id/vehicletypetxt"
+                    android:text="@string/vehicletype"
+                    android:layout_below="@id/radio_view"
+                    style="@style/list_item_caption"
+                    />
+
+                <EditText
+                    android:id="@+id/vehicletype"
+                    android:layout_below="@+id/vehicletypetxt"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:background="#fff"
+                    android:cursorVisible="true"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:focusable="false"
+                     style="@style/edit_text_style"
+                    />
+                <View
+                    android:id="@+id/vehicletypeview"
+                    android:layout_below="@+id/vehicletype"
+                    style="@style/list_item_view" />
+
+
+                <TextView
+                    android:id="@+id/textregno"
+                    android:text="@string/registration"
+                    android:layout_below="@id/vehicletypeview"
+                    style="@style/list_item_caption"
+                    />
+
+                <EditText
+                    android:id="@+id/registrationno"
+                    android:layout_below="@+id/textregno"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    style="@style/edit_text_style"
+                    />
+</RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/card1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/card"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardElevation="4dp"
+                    app:cardCornerRadius="2dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:id="@+id/root1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="0dp"
+                        android:paddingBottom="5dp"
+                        android:background="#fff">
+
+                <TextView
+                    android:id="@+id/liscense_text"
+                   android:text="@string/LicenseDetail"
+                   style="@style/cardheader"/>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_below="@+id/liscense_text"
+                   style="@style/list_header_view" />
+
+                <TextView
+                    android:id="@+id/licnotext"
+                    android:layout_below="@+id/view2"
+                    style="@style/list_item_caption"
+                    android:text="@string/Lic_no" />
+
+                <EditText
+                    android:id="@+id/lic_no"
+                     android:layout_below="@+id/licnotext"
+                     android:inputType="textCapSentences"
+                   style="@style/edit_text_style" />
+
+                <View
+                    android:id="@+id/licview"
+                      android:layout_below="@+id/lic_no"
+                    style="@style/list_item_view" />
+
+                <TextView
+                    android:id="@+id/lictypetext"
+                     android:layout_below="@+id/licview"
+                    style="@style/list_item_caption"
+                       android:text="@string/Lic_type" />
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingLeft="10dp"
+                            android:spinnerMode="dialog"
+                            android:id="@+id/license_type"
+                            android:layout_below="@+id/lictypetext"/>
+
+                <View
+                    android:id="@+id/lictypeview"
+                    android:layout_below="@+id/license_type"
+                    style="@style/list_item_view"
+                    />
+
+                <TextView
+                    android:id="@+id/expirydatetext"
+                    android:layout_below="@+id/lictypeview"
+                     style="@style/list_item_caption"
+                    android:text="@string/Lic_date" />
+
+                <EditText
+                    android:id="@+id/license_expirydate"
+                    android:layout_below="@+id/expirydatetext"
+                     android:cursorVisible="true"
+                    android:focusable="false"
+                    style="@style/edit_text_style"
+                    />
+
+
+</RelativeLayout>
+                </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:id="@+id/card2"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/card1"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="2dp"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/root2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="0dp"
+        android:background="#fff">
+                <TextView
+                    android:id="@+id/insurace"
+                    android:text="@string/VehicleDetails"
+                   style="@style/cardheader" />
+
+                <View
+                    android:id="@+id/view3"
+                      android:layout_below="@+id/insurace"
+                   style="@style/list_header_view" />
+
+                <TextView
+                    android:id="@+id/expdatetext"
+                     android:layout_below="@+id/view3"
+                    style="@style/list_item_caption"
+                    android:text="@string/insurance_expdate" />
+
+                <EditText
+                    android:id="@+id/insurace_expirydate"
+                     android:layout_below="@+id/expdatetext"
+                     android:focusable="false"
+                    android:cursorVisible="true"
+                  style="@style/edit_text_style" />
+
+            </RelativeLayout>
+</android.support.v7.widget.CardView>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

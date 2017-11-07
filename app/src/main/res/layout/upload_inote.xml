@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/visittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="@string/uploadinstallationnote"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#444444"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/title"
+        android:background="@color/colorPrimary"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/dateformattext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/DateFormat" />
+
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/dateformat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateformattext"
+        android:layout_marginRight="10dp"
+        style="@style/Widget.AppCompat.Spinner.Underlined"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="7dp"
+        app:backgroundTint="#000"
+        android:spinnerMode="dialog"
+        android:inputType="textCapSentences"
+
+        android:paddingLeft="12dp"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/atta_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateformat"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/inote_attachment" />
+
+    <EditText
+    android:id="@+id/attachment"
+    android:layout_below="@+id/atta_text"
+    android:cursorVisible="true"
+    android:drawableRight="@drawable/ic_attachment"
+    android:focusable="false"
+    style="@style/edit_text_style" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/attachment"
+        style="@style/list_item_view"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:text="Upload"
+        android:textColor="#fff"
+        android:id="@+id/upload"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+        </RelativeLayout>
+</RelativeLayout>

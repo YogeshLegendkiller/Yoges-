@@ -1,0 +1,169 @@
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="precisioninfomatics.servicefirst.Activities.TravelEdit"
+    tools:showIn="@layout/activity_travel_edit">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:paddingBottom="5dp">
+            <TextView
+                android:id="@+id/claimtext"
+                android:text="@string/Claim"
+                style="@style/cardheader" />
+            <View
+                android:id="@+id/view1"
+                android:layout_below="@+id/claimtext"
+                style="@style/list_header_view"
+                />
+            <TextView
+                android:id="@+id/checkin_text"
+                android:layout_below="@+id/view1"
+                android:text="@string/Checkin"
+                style="@style/list_item_caption"/>
+
+
+            <EditText
+                android:id="@+id/checkin"
+                android:layout_below="@+id/checkin_text"
+                android:cursorVisible="true"
+                android:focusable="false"
+                android:inputType="textCapSentences"
+                android:textCursorDrawable="@null"
+                style="@style/edit_text_style" />
+
+            <View
+                android:id="@+id/checkinview"
+                android:layout_below="@+id/checkin"
+                style="@style/list_item_view" />
+
+            <TextView
+                android:id="@+id/checkout_text"
+                android:layout_below="@+id/checkinview"
+                android:text="@string/Checkout"
+                style="@style/list_item_caption"/>
+
+
+            <EditText
+                android:id="@+id/checkout"
+                android:layout_below="@+id/checkout_text"
+                android:cursorVisible="true"
+                android:focusable="false"
+                style="@style/edit_text_style" />
+
+
+
+
+            <View
+                android:id="@+id/checkoutview"
+                android:layout_below="@+id/checkout"
+                style="@style/list_item_view" />
+            <TextView
+                android:id="@+id/transportmodetext"
+                android:layout_below="@+id/checkoutview"
+                android:text="@string/transportmode"
+                style="@style/list_item_caption"/>
+            <EditText
+                android:id="@+id/transportmode"
+                android:layout_below="@+id/transportmodetext"
+                android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:focusable="false"
+                style="@style/edit_text_style"/>
+
+            <View
+                android:id="@+id/transportmodeview"
+                android:layout_below="@+id/transportmode"
+                style="@style/list_item_view"/>
+            <TextView
+                android:id="@+id/fromloctext"
+                android:layout_below="@+id/transportmodeview"
+                android:text="@string/from_loc"
+                style="@style/list_item_caption"/>
+            <EditText
+                android:id="@+id/fromloc"
+                android:layout_below="@+id/fromloctext"
+                style="@style/edit_text_style"/>
+
+            <View
+                android:id="@+id/fromlocview"
+                android:layout_below="@+id/fromloc"
+                style="@style/list_item_view"/>
+            <TextView
+                android:id="@+id/toloctext"
+                android:layout_below="@+id/fromlocview"
+                android:text="@string/to_loc"
+                style="@style/list_item_caption"/>
+            <EditText
+                android:id="@+id/toloc"
+                android:layout_below="@+id/toloctext"
+                style="@style/edit_text_style"/>
+
+            <View
+                android:id="@+id/tolocview"
+                android:layout_below="@+id/toloc"
+                style="@style/list_item_view"/>
+            <TextView
+                android:id="@+id/amounttext"
+                android:layout_below="@+id/tolocview"
+                style="@style/list_item_caption"
+                android:text="@string/amount" />
+
+
+            <EditText
+                android:id="@+id/amount"
+                android:layout_below="@+id/amounttext"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                style="@style/edit_text_style"
+                />
+            <View
+                android:id="@+id/callslipnoview"
+                android:layout_below="@+id/amount"
+                style="@style/list_item_view"/>
+
+            <TextView
+                android:id="@+id/atta_text"
+                android:layout_below="@+id/callslipnoview"
+                android:text="@string/attachment"
+                style="@style/list_item_caption"/>
+
+            <EditText
+                android:id="@+id/attachment"
+                android:layout_below="@+id/atta_text"
+                android:cursorVisible="true"
+                android:focusable="false"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                style="@style/edit_text_style"
+                android:drawableRight="@drawable/ic_attachment"
+                android:textCursorDrawable="@null"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+    </ScrollView>

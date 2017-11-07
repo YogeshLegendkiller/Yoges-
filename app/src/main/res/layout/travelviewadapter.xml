@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/visit_text"
+                style="@style/cardheader"
+                android:text="Travel Details" />
+
+            <View
+                android:id="@+id/visitview"
+                style="@style/list_header_view"
+                android:layout_below="@+id/visit_text" />
+
+            <TextView
+                android:id="@+id/checkintext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/visitview"
+                android:text="@string/Checkin" />
+
+            <TextView
+                android:id="@+id/checkin"
+                style="@style/list_item_text"
+                android:layout_below="@+id/checkintext" />
+
+            <View
+                android:id="@+id/checkinview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/checkin" />
+
+            <TextView
+                android:id="@+id/checkouttext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/checkinview"
+                android:text="@string/Checkout" />
+
+            <TextView
+                android:id="@+id/checkout"
+                style="@style/list_item_text"
+                android:layout_below="@+id/checkouttext" />
+
+            <View
+                android:id="@+id/checkoutview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/checkout" />
+            <TextView
+                android:id="@+id/fromloctext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/checkoutview"
+                android:text="@string/from_loc" />
+
+            <TextView
+                android:id="@+id/fromloc"
+                style="@style/list_item_text"
+                android:layout_below="@+id/fromloctext" />
+
+
+            <View
+                android:id="@+id/fromlocview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/fromloc" />
+            <TextView
+                android:id="@+id/toloctext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/fromlocview"
+                android:text="@string/to_loc" />
+
+            <TextView
+                android:id="@+id/toloc"
+                style="@style/list_item_text"
+                android:layout_below="@+id/toloctext" />
+
+
+            <View
+                android:id="@+id/tolocview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/toloc" />
+            <TextView
+                android:id="@+id/transportmodetext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/tolocview"
+                android:text="@string/transportmode" />
+
+            <TextView
+                android:id="@+id/transportmode"
+                style="@style/list_item_text"
+                android:layout_below="@+id/transportmodetext" />
+
+
+            <View
+                android:id="@+id/transportmodeview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/transportmode" />
+
+            <TextView
+                android:id="@+id/kilometertext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/transportmodeview"
+                android:text="@string/kilometer" />
+
+            <TextView
+                android:id="@+id/kilometer"
+                style="@style/list_item_text"
+                android:layout_below="@+id/kilometertext" />
+
+            <View
+                android:id="@+id/kilometerview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/kilometer" />
+
+            <TextView
+                android:id="@+id/amounttext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/kilometerview"
+                android:text="@string/amount" />
+
+            <TextView
+                android:id="@+id/amount"
+                style="@style/list_item_text"
+                android:layout_below="@+id/amounttext" />
+            <!--View
+                android:id="@+id/filview"
+                style="@style/list_item_view"
+                android:layout_below="@+id/amount" />
+
+            <TextView
+                android:id="@+id/attachmenttext"
+                style="@style/list_item_caption"
+                android:layout_below="@+id/filview"
+                android:text="@string/attachment" />
+
+            <TextView
+                android:id="@+id/attachment"
+                style="@style/list_item_text"
+                android:layout_below="@+id/attachmenttext" />
+            <TextView
+                android:id="@+id/map_view"
+                style="@style/list_item_text"
+                android:layout_below="@+id/attachmenttext"
+                android:layout_alignParentRight="true"
+                android:text="View"
+                android:textColor="@color/SForange"
+                android:layout_alignParentEnd="true"/-->
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "precisioninfomatics.servicefirst"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 9
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven { url "https://jitpack.io" }
+    maven { url 'http://guardian.github.com/maven/repo-releases' }
+    maven { url 'https://maven.google.com' }
+ }
+dependencies {
+     compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.android.support:appcompat-v7:26.0.2'
+    compile 'com.android.support:mediarouter-v7:26.0.2'
+    compile 'com.android.support:recyclerview-v7:26.0.2'
+    compile 'com.android.support:cardview-v7:26.0.2'
+    compile 'com.android.support:multidex:1.0.2'
+    compile 'com.android.support:design:26.0.2'
+    compile 'com.github.deano2390:MaterialShowcaseView:1.1.0'
+    compile 'com.github.vipulasri:timelineview:1.0.5'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.github.Plumillon:ChipView:1.2.0'
+     compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.android.support:exifinterface:26.0.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.google.firebase:firebase-messaging:11.2.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.android.gms:play-services:11.2.2'
+  }
+
+apply plugin: 'com.google.gms.google-services'

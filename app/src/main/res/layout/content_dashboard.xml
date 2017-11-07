@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:chip="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/a"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.VisitUpdation">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9C27B0"
+        android:layout_marginTop="7dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#ab47bc"
+        app:cardCornerRadius="2dp">
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ab47bc"
+        >
+        <TextView
+            android:id="@+id/sumarytext"
+            android:text="Incident Visit Summary"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+             />
+        <View
+            android:id="@+id/view1"
+            android:layout_below="@+id/sumarytext"
+            style="@style/list_header_view"
+            android:background="#fff000"/>
+
+         <android.support.v7.widget.RecyclerView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/inc_summary"
+             android:background="#ab47bc"
+            android:layout_below="@+id/view1"
+            android:dividerHeight="0.5dp"
+            android:keepScreenOn="true"
+            android:scrollbars="vertical"
+             />
+</RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/pie_card"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/card"
+        app:cardCornerRadius="2dp"
+        app:cardBackgroundColor="#ab47bc"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        app:cardElevation="4dp">
+        <RelativeLayout
+            android:id="@+id/pie_rl"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ab47bc">
+        <TextView
+            android:id="@+id/pietext"
+            android:text="Incident Service Classification Summary"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            />
+
+
+        <View
+            android:id="@+id/view2"
+            android:layout_below="@+id/pietext"
+            style="@style/list_header_view"
+            android:background="#fff000"/>
+
+            <TableLayout
+                android:id="@+id/child_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="0dp"
+                android:padding="5dp"
+                android:background="#ab47bc"
+                android:layout_below="@+id/pie"
+                android:orientation="vertical" >
+
+                </TableLayout>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pie"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/view2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--android.support.v7.widget.CardView
+        android:id="@+id/bar_card"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_below="@+id/pie_card"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <RelativeLayout
+            android:id="@+id/bar_rl"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#fff">
+        <TextView
+            android:id="@+id/bartext"
+            android:text="Incident Asset Category Summary"
+            style="@style/cardheader"
+            />
+
+
+        <View
+            android:id="@+id/view3"
+            android:layout_below="@+id/bartext"
+            style="@style/list_header_view" />
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/view3"
+            android:layout_height="match_parent" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView-->
+</RelativeLayout>
+    </ScrollView>
